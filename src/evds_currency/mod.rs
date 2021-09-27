@@ -186,23 +186,25 @@ impl ConvertingToRustEnum<CurrencyCode> for &str {
 ///
 /// # Usage
 /// ```
+/// #   use tcmb_evds::evds_currency::CurrencyCodes;
+/// #
 ///     let currency_codes_1 = CurrencyCodes {
 ///         usd: true,
 ///         aud: true,
 ///         pkr: true,
 ///         ..Default::default()
-///     }
+///     };
 ///     
 ///     let currency_codes_2 = CurrencyCodes {
 ///         gbp: true,
 ///         ..Default::default()
-///     }
+///     };
 ///
 ///     let currency_codes_3 = CurrencyCodes {
 ///         sar: true,
 ///         qar: true,
 ///         ..Default::default()
-///     }
+///     };
 /// ```
 pub struct CurrencyCodes {
     pub usd: bool,
@@ -485,7 +487,7 @@ impl CurrencySeries {
     /// #   let currency_series = CurrencySeries::from(exchange_type, currency_code, date_preference, ytl_mode);
     /// #
     /// #   let api_key = 
-    /// #       if let Ok(api_key) = ApiKey::from("users_api_key") { api_key } 
+    /// #       if let Ok(api_key) = ApiKey::from("users_api_key".to_string()) { api_key } 
     /// #       else { return }; 
     /// #   let evds = Evds::from(api_key, ReturnFormat::Json);
     /// #
@@ -558,7 +560,7 @@ impl CurrencySeries {
     /// #   let currency_series = CurrencySeries::from(exchange_type, currency_code, date_preference, ytl_mode);
     /// #
     /// #   let api_key = 
-    /// #       if let Ok(api_key) = ApiKey::from("users_api_key") { api_key } 
+    /// #       if let Ok(api_key) = ApiKey::from("users_api_key".to_string()) { api_key } 
     /// #       else { return }; 
     /// #   let evds = Evds::from(api_key, ReturnFormat::Json);
     /// #
@@ -760,7 +762,7 @@ impl MultipleCurrencySeries {
     /// #       );
     /// #
     /// #   let api_key = 
-    /// #       if let Ok(api_key) = ApiKey::from("users_api_key") { api_key } 
+    /// #       if let Ok(api_key) = ApiKey::from("users_api_key".to_string()) { api_key } 
     /// #       else { return }; 
     /// #   let evds = Evds::from(api_key, ReturnFormat::Json);
     /// #

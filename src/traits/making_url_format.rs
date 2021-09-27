@@ -37,13 +37,13 @@ pub(crate) trait MakingUrlFormat {
     /// Ytl mode given as parameter configures return value format of currency series.
     ///
     /// Printout examples:
-    /// ```
+    /// ``` Example
     ///     1. Ytl Mode On : TP.DK.USA.A.YTL 
     ///     2. Ytl Mode Off: TP.DK.USA.A
     ///     
     /// ```
     /// Later couples:
-    /// ```
+    /// ``` Example
     ///     1. -> TP.DK.USA.S.YTL
     ///     2. -> TP.DK.USA.S
     /// 
@@ -69,7 +69,7 @@ pub(crate) trait MakingUrlFormat {
     ///     
     /// ```
     /// Later couples:
-    /// ```
+    /// ``` Example
     ///     1. -> TP.DK.USA.S.YTL
     ///     2. -> TP.DK.USA.S
     /// 
@@ -101,7 +101,7 @@ pub(crate) trait MakingUrlFormat {
     /// This function should be used when double exchange type is provided.
     /// 
     /// Buying and Selling Types Output Examples: 
-    /// ```
+    /// ``` Example
     ///     Buying: TP.DK.A.JPY, Selling: TP.DK.S.JPY
     /// 
     ///     Combined_series: TP.DK.A.JPY-TP.DK.S.JPY

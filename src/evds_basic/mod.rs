@@ -309,7 +309,7 @@ pub fn get_advanced_data_group(
 /// 
 ///     
 /// #   let api_key = 
-/// #       if let Ok(api_key) = ApiKey::from("users_api_key") { api_key } 
+/// #       if let Ok(api_key) = ApiKey::from("users_api_key".to_string()) { api_key } 
 /// #       else { return }; 
 /// #   
 /// #   let evds = Evds::from(api_key, ReturnFormat::Csv);
