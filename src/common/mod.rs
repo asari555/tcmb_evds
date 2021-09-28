@@ -204,12 +204,12 @@ impl<'a> Evds {
     /// ```
     /// # use std::error::Error;
     /// # use tcmb_evds::error::ReturnError;
-    ///     use tcmb_evds::common::{ApiKey, ReturnFormat, Evds};
+    ///     use tcmb_evds::common::*;
     /// 
     /// 
     /// # fn main() -> Result<(), Box<dyn Error>> {
     /// #
-    /// # let api_key = ApiKey::from("users_key")?;
+    /// # let api_key = ApiKey::from("users_key".to_string())?;
     ///     let mut evds = Evds::from(api_key, ReturnFormat::Json);
     ///          
     ///          

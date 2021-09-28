@@ -168,11 +168,12 @@
 ///
 /// ```
 /// # use std::error::Error;
-/// # use tcmb_evds::common::{ApiKey, ReturnFormat, Evds};
+///     use tcmb_evds::common::*;
+///
 /// # use tcmb_evds::error::ReturnError;
 /// #
 /// # fn main() -> Result<(), Box<dyn Error>> {
-/// #
+/// 
 ///     // Please use a valid key here.
 ///     let api_key = ApiKey::from("users_valid_key".to_string())?;
 ///
@@ -198,11 +199,12 @@ pub mod common;
 ///
 /// ```
 /// # use std::error::Error;
-/// # use tcmb_evds::date::{Date, DateRange, DatePreference};
+///     use tcmb_evds::date::*;
+///
 /// # use tcmb_evds::error::ReturnError;
 /// #
 /// # fn main() -> Result<(), Box<dyn Error>> {
-/// #
+///
 ///     // Single date example.
 ///     let date = Date::from("13-12-2011")?;
 ///

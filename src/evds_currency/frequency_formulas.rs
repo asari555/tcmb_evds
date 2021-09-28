@@ -124,13 +124,13 @@ impl AdvancedProcesses {
     /// 
     /// # Example
     /// ```
-    ///     use tcmb_evds::evds_currency::{AggregationType, Formula, DataFrequency, AdvancedProcesses}
+    ///     use tcmb_evds::evds_currency::frequency_formulas::*;
     ///
-    ///     let aggregation_type = Aggregation::Average;
+    ///     let aggregation_type = AggregationType::Average;
     ///     let formula = Formula::Level;
     ///     let data_frequency = DataFrequency::Monthly;
     ///
-    ///     let advanced_process = AdvancedProcess::from(aggregation_type, formula, data_frequency);
+    ///     let advanced_processes = AdvancedProcesses::from(aggregation_type, formula, data_frequency);
     /// ```
     pub fn from(
         aggregation_type: AggregationType, 
