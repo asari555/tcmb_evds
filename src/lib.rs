@@ -133,7 +133,7 @@
 //!
 //! # User Guide
 //!
-//! First of all, please take a look at *[README.md](https://github.com/asari555/tcmb_evds/blob/main/README.md)* file 
+//! First of all, please take a look at *[README.md](https://github.com/asari555/tcmb_evds/blob/master/README.md)* file 
 //! before using the crate.
 //!
 //! Additional resource for understanding some parameters, learning various data series and details of web services are 
