@@ -7,8 +7,7 @@ repository = "https://github.com/asari555/tcmb_evds"
 readme = "README.md"
 keywords = ["currency", "tcmb", "tcmb_evds"]
 categories = ["network-programming", "web-programming", "web-programming::http-client"]
-package.license = ["MIT"]
-package.license-file = ["LICENSE"]
+license = "MIT"
 exclude = [
     "target/*",
     "tests/*"
