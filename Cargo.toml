@@ -2,11 +2,19 @@
 name = "tcmb_evds"
 version = "0.1.0"
 authors = ["Ahmet Sari <asari571@gmail.com>"]
-edition = "2018"
+description = "A Rust crate for reaching the database of The Central Bank of The Republic of Turkey (CBRT)."
+repository = "https://github.com/asari555/tcmb_evds"
+readme = "README.md"
+keywords = ["currency", "tcmb", "tcmb_evds"]
+categories = ["network-programming", "web-programming", "web-programming::http-client"]
+package.license = ["MIT"]
+license-file = ["LICENSE"]
 exclude = [
     "target/*",
     "tests/*"
 ]
+codecov = { repository = "https://github.com/asari555/tcmb_evds" }
+edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
