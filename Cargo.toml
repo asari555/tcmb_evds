@@ -8,7 +8,7 @@ readme = "README.md"
 keywords = ["currency", "tcmb", "tcmb_evds"]
 categories = ["network-programming", "web-programming", "web-programming::http-client"]
 package.license = ["MIT"]
-license-file = ["LICENSE"]
+package.license-file = ["LICENSE"]
 exclude = [
     "target/*",
     "tests/*"
